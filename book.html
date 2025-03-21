@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Review Website</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1>Goodreads</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search for a book...">
+    <button onclick="searchBook()">
+        <span class="search-icon">&#128269;</span> <!-- Unicode magnifying glass icon -->
+    </button>
+</div>
+    </header>
+    
+    <main>
+        <section id="home">
+            <h2>Welcome to Book Reviews</h2>
+            <p>Discover the best books and share your thoughts.</p>
+        </section>
+        
+        <section id="reviews">
+            <h2>Latest Reviews</h2>
+            <div id="review-list">
+                <article class="review" data-title="The Great Gatsby">
+                    <img src="great gastby.jpg" alt="The Great Gatsby Cover">
+                    <h3>The Great Gatsby</h3>
+                    <p>A classic novel by F. Scott Fitzgerald, exploring themes of wealth and society.</p>
+                </article>
+                <article class="review" data-title="1984">
+                    <img src="1984.jpg" alt="1984 Cover">
+                    <h3>1984</h3>
+                    <p>George Orwell's dystopian novel about a totalitarian future.</p>
+                </article>
+                <article class="review" data-title="To Kill a Mockingbird">
+                    <img src="Mockingbird.webp" alt="To Kill a Mockingbird Cover">
+                    <h3>To Kill a Mockingbird</h3>
+                    <p>Harper Lee’s novel about racial injustice in the American South.</p>
+                </article>
+                <article class="review" data-title="Pride and Prejudice">
+                    <img src="pride and prejudice.jpg" alt="Pride and Prejudice Cover">
+                    <h3>Pride and Prejudice</h3>
+                    <p>Jane Austen's timeless romance exploring love, class, and societal expectations.</p>
+                </article>
+                <article class="review" data-title="The Catcher in the Rye">
+                    <img src="catcher.jpg" alt="The Catcher in the Rye Cover">
+                    <h3>The Catcher in the Rye</h3>
+                    <p>J.D. Salinger's novel about teenage rebellion and alienation.</p>
+                </article>
+                <article class="review" data-title="Moby Dick">
+                    <img src="moby.jpg" alt="Moby Dick Cover">
+                    <h3>Moby Dick</h3>
+                    <p>Herman Melville's epic tale of obsession and revenge on the high seas.</p>
+                </article>
+                <article class="review" data-title="The Hobbit">
+                    <img src="hobbit.jpg" alt="The Hobbit Cover">
+                    <h3>The Hobbit</h3>
+                    <p>J.R.R. Tolkien's fantasy adventure about Bilbo Baggins and his quest for treasure.</p>
+                </article>
+                <article class="review" data-title="Brave New World">
+                    <img src="brave new.jpg" alt="Brave New World Cover">
+                    <h3>Brave New World</h3>
+                    <p>Aldous Huxley's vision of a futuristic society driven by technology and control.</p>
+                </article>
+                <article class="review" data-title="The Alchemist">
+                    <img src="the alchemist.jpg" alt="The Alchemist Cover">
+                    <h3>The Alchemist</h3>
+                    <p>Paulo Coelho's inspirational novel about following your dreams and finding your destiny.</p>
+                </article>
+                <article class="review" data-title="The Lord of the Rings">
+                    <img src="lord.jpg" alt="The Lord of the Rings Cover">
+                    <h3>The Lord of the Rings</h3>
+                    <p>J.R.R. Tolkien's epic fantasy trilogy about the quest to destroy the One Ring.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Book Reviews. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="script.js">
+    </script>
+</body>
+</html>
